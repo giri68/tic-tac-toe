@@ -1,49 +1,36 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-
-    <!-- set viewport to device width to allow responsiveness -->
+ <!-- set viewport to device width to allow responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS from CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <!-- link to custom stylesheet (always require after Bootstrap) -->
-    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
-    <!-- jQuery from CDN -->
-
-
-    <!-- link to custom javascript file (always require after external JS libraries) -->
-
-    <title>Tic Tac Toe</title>
+   <!-- Bootstrap CSS from CDN -->
+    <link rel='stylesheet' href='https://getbootstrap.com/2.3.2/assets/css/bootstrap.css'>
+<title>game</title>
+    <link rel="stylesheet" href="css/style.css">
+    
   </head>
   <body>
     <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h1>Tic Tac Toe</h1>
-          <hr>
-        </div>
-      </div>
-      <div class="row">
+      <header><h1>Tic Tac Toe</h1></header>
 
-        <!-- a column represents our game board -->
-        <!-- the `offset` class helps us center the board -->
-        <div class="col-md-6 col-md-offset-3" id="board">
+      <div class="message">Current Player: X</div>
+      <button class="play-again">Play Again</button>
 
-          <!-- you can put rows inside of columns! -->
-          <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
-          <div class="row">
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
-          </div>
-
-
-
-        </div>
+      <div class="gameboard">
+        <div id="0" class="square r-border b-border"></div>
+        <div id="1" class="square r-border b-border"></div>
+        <div id="2" class="square b-border"></div>
+        <div id="3" class="square r-border b-border"></div>
+        <div id="4" class="square r-border b-border"></div>
+        <div id="5" class="square b-border"></div>
+        <div id="6" class="square r-border"></div>
+        <div id="7" class="square r-border"></div>
+        <div id="8" class="square"></div>
       </div>
     </div>
+
+    <script src='https://code.jquery.com/jquery-1.7.2.min.js'></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
